@@ -1,0 +1,10 @@
+[Unit]
+Description=Check calendar and join/quit Jitsi room
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+Unit=jitsi-room-joiner.service
+
+[Install]
+WantedBy=timers.target
