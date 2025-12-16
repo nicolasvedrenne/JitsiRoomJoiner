@@ -106,6 +106,8 @@ def launch_meeting(url: str):
             FIREFOX,
             "-P",
             PROFILE,
+            "--no-remote",
+            "--new-instance",
             "--kiosk",
             url,
         ]

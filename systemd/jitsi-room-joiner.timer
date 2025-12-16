@@ -1,10 +1,13 @@
 [Unit]
 Description=Check calendar and join/quit Jitsi room
+After=graphical-session.target
+Wants=graphical-session.target
 
 [Timer]
-OnBootSec=1min
-OnUnitActiveSec=1min
 Unit=jitsi-room-joiner.service
+OnBootSec=2min
+OnUnitActiveSec=60
+AccuracySec=5s
 
 [Install]
-WantedBy=timers.target
+WantedBy=graphical-session.target
