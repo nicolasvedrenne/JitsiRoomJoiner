@@ -42,7 +42,7 @@ def get_datetime(event, field: str) -> Optional[datetime]:
 def extract_url(event) -> Optional[str]:
     conf_id = event.get("x-conference-id") or event.get("X-CONFERENCE-ID")
     if conf_id:
-        return f'{VISIO_BASE}{conf_id}#userInfo.displayName="{quote(DISPLAY_NAME)}"&config.prejoinConfig.enabled=false'
+        return f'{VISIO_BASE}{conf_id}#userInfo.displayName="{quote(DISPLAY_NAME)}"&config.prejoinConfig.enabled=false&config.startWithAudioMuted=false&config.startWithVideoMuted=false'
     return None
 
 
