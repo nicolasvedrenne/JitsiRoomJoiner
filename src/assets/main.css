@@ -1,0 +1,19 @@
+@import './base.css';
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: radial-gradient(circle at 15% 20%, #0b1224, #0b1224 30%, #0f172a),
+    linear-gradient(135deg, #0b1224 0%, #0f172a 40%, #0b1224 100%);
+  color: #e2e8f0;
+}
+
+#app {
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 2rem;
+  font-weight: 400;
+  max-width: 1200px;
+}
